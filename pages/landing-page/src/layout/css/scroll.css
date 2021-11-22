@@ -1,0 +1,13 @@
+html {
+  scroll-behavior: smooth;
+  overflow: overlay;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262cd9;
+  border-radius: 6px;
+}
