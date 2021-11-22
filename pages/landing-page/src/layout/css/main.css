@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #06091a;
+  overflow-x: hidden;
+  /*track da scroll transparente*/
+}
+
+.filterBlur {
+  width: 100vw;
+  height: 200vh;
+
+  /*
+  background: greenyellow; */
+  backdrop-filter: blur(50px);
+  position: absolute;
+  top:0 ;
+  background: var(--gray-light);
+  z-index: -1;
+}
+@media only screen and (max-width: 600px) {
+    .filterBlur {
+      height: 200vh;
+    }
+}
+
+/*
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: #262cd9;
+  border-radius: 6px;
+}
+ */

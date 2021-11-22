@@ -1,0 +1,13 @@
+.containerRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: auto;
+}
+
+@media only screen and (max-width: 650px) {
+  .containerRight {
+    width: 100%;
+  }
+}
