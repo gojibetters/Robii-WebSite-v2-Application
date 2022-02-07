@@ -1,15 +1,15 @@
 {
   "name": "robii",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "app.js",
-  "author": "tauasanto <tauasanto101@gmail.com>",
+  "author": "Taua Ferreira <tauasantops@gmail.com>",
 
   "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "nodemon app.js",
-    "commit": "git add . && cz",
-    "commit:partial": "git add . && cz"
+    "commit": "git add . && cz && git push",
+    "commit:partial": "cz"
   },
   "husky": {
     "hooks": {
@@ -37,11 +37,11 @@
     "@commitlint/config-conventional": "^12.1.4",
     "commitizen": "4.2.4",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "^7.32.0",
+    "eslint": "^7.28.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-prettier": "^3.4.0",
     "husky": "^6.0.0",
     "init": "0.1.2",
