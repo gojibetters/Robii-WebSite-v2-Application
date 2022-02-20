@@ -6,7 +6,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "nodemon app.js",
+    "dev": "nodemon src/app.js",
     "commit": "git add . && cz && git push",
     "commit:partial": "cz"
   },

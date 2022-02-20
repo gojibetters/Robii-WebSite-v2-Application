@@ -26,7 +26,7 @@ async function recursiveArchivesImport(folder, format) {
         if (archive.method && archive.route) {
           return await router[archive.method](
             archive.route,
-            rateLimit,
+
             archive.run
           );
         }
