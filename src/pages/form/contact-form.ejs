@@ -8,19 +8,16 @@
   <title>Contato</title>
 
   <% cssDirectoriesRender.forEach((urlArchive)=> {%>
-    <link rel="stylesheet" type="text/css" href="<%= urlArchive %>" />%> <% }) %>
+    <link rel="stylesheet" type="text/css" href="<%= urlArchive.replace('pages/form/','') %>" />%> <% }) %>
 </head>
 
 <body>
   <% htmlDirectoriesRender.forEach((urlArchive)=> {%>
-    <%- include( urlArchive.replace('form/', '' )) %>
+    <%- include( urlArchive.replace('pages/form/', '' )) %>
       <% }) %>
-
-        <% javascriptDirectoriesRender.forEach((urlArchive)=> {%>
-          <script src="<%= urlArchive %>"></script>
-          <% }) %>
-
-
+  <% javascriptDirectoriesRender.forEach((urlArchive)=> {%>
+    <script src="<%= urlArchive.replace('pages/form/','')  %>"></script>
+  <% }) %>
 </body>
 
 </html>

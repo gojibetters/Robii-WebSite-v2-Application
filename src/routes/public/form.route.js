@@ -16,7 +16,6 @@ export default {
       './src/pages/form/src/layout/js',
       '.js'
     );
-    console.log(cssDirectoriesRender);
 
     res.render('../../pages/form/contact-form', {
       cssDirectoriesRender,

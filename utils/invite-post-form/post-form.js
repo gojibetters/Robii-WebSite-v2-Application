@@ -18,15 +18,11 @@ export function postForm(req, res) {
   };
 
   // mandar o email
-  transporter.sendMail(mailOptions, (error, info) => {
+  transporter.sendMail(mailOptions, (error) => {
     if (error) {
       console.log(error);
       res.send('error');
     } else {
-      console.log(`Email enviado: ${info.response}`);
-      console.log(`Message sent: ${info.messageId}`);
-
-      console.log(`Preview URL:  ${nodemailer.getTestMessageUrl(info)}`);
       res.send('success');
     }
   });

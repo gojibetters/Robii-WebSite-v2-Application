@@ -9,17 +9,17 @@
   <title>Robii</title>
 
   <% cssDirectoriesRender.forEach((urlArchive)=> {%>
-    <link rel="stylesheet" type="text/css" href="<%= urlArchive %>" />%> <% }) %>
+    <link rel="stylesheet" type="text/css" href="<%= urlArchive.replace('pages/','') %>" />%> <% }) %>
 
 </head>
 
 <body>
   <% htmlDirectoriesRender.forEach((urlArchive)=> {%>
-    <%- include( urlArchive.replace('landing-page/', '' )) %>
+    <%- include( urlArchive.replace('pages/landing-page/', '' )) %>
       <% }) %>
 
         <% javascriptDirectoriesRender.forEach((urlArchive)=> {%>
-          <script src="<%= urlArchive %>"></script>
+          <script src="<%= urlArchive.replace('pages/', '') %>"></script>
           <% }) %>
 
             <script>

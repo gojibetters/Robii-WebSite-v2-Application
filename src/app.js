@@ -4,17 +4,21 @@ import 'dotenv/config';
 import cors from 'cors';
 import fs from 'fs';
 import https from 'https';
+import path, { dirname } from 'path';
+import { fileURLToPath } from 'url';
 import router from './routes/routes.js';
 
 const { PORTHTTP, PORTHTTPS } = process.env;
 const app = express();
 
+const mDirname = dirname(fileURLToPath(import.meta.url));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(express.static('/src/pages'));
+app.set('views', path.join(mDirname, 'src/pages'));
+app.use(express.static('src/pages'));
 app.set('view engine', 'ejs');
-
 app.use(cors());
 app.use(router);
 
