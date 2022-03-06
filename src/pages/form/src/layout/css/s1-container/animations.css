@@ -1,0 +1,28 @@
+/* @keyframes bg-color {
+  100% {
+    background-position: right;
+  }
+} */
+
+/* @keyframes start {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */
+/*
+@keyframes opacity {
+  0%,
+  10% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+ */

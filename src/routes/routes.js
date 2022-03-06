@@ -7,7 +7,7 @@ import rateLimit from '../middlewares/rateLimit.js';
 
 const router = new Router();
 const mDirname = dirname(fileURLToPath(import.meta.url));
-const routeFolders = ['login', 'public'];
+const routeFolders = ['public'];
 
 async function recursiveArchivesImport(folder, format) {
   async function searchDirectories(search) {

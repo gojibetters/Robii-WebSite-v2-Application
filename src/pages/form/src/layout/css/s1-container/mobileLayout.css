@@ -1,0 +1,30 @@
+@media (max-width: 1400px) {
+  .container {
+    margin: 5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 100vw;
+  }
+  .svg {
+    display: none;
+  }
+}
+
+@media (max-width: 690px) {
+  /*  .color:nth-child(1) {
+    width: 50%;
+    height: 50%;
+  }
+
+  .color:nth-child(2) {
+    width: 50%;
+    height: 50%;
+  } */
+}

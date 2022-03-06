@@ -1,0 +1,87 @@
+.section {
+  position: relative;
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 3px 3px 30px #222;
+  /* animation: start 3s; */
+}
+
+.contact-form h2 {
+  cursor: default;
+  font-size: 1.4em;
+  background: white;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 300%;
+  background-position: left;
+  /*  animation: bg-color 2s alternate infinite forwards ease-in-out, opacity 7s; */
+}
+
+.svg {
+  width: 50%;
+  padding: 5%;
+  /* animation: opacity 5s; */
+}
+
+.form-container {
+  padding: 5%;
+  width: 100%;
+  background: rgba(1, 1, 1, 0.1);
+}
+
+input,
+textarea {
+  padding: 2%;
+  margin-top: 5%;
+  width: 100%;
+  font-size: 0.7em;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  outline: none;
+  text-decoration: none;
+  resize: none;
+  border-radius: 5px;
+  color: white;
+  transition: 200ms;
+  /*   animation: opacity 7s; */
+}
+
+input::placeholder,
+textarea::placeholder {
+  transition: 200ms;
+}
+
+textarea:hover::placeholder,
+input:hover::placeholder {
+  color: white;
+}
+
+.submit {
+  font-size: 0.6em;
+  font-weight: 600;
+  width: auto;
+  background-position: right;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: 150ms ease-in-out;
+  /*  animation: opacity 7s; */
+  border: none;
+
+  color: white;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.submit:hover {
+  transform: scale(105%);
+}
