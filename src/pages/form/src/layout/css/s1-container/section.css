@@ -1,3 +1,26 @@
+/* .button-back {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  height: auto;
+  color: white;
+  background: var(--gray-light);
+  font-size: 0.8em;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 2px;
+} */
+.buttonBack:hover,
+.submit:hover {
+  background: var(--blue-caparal-light);
+}
+
 .section {
   position: relative;
   width: 60vw;
@@ -13,10 +36,11 @@
   display: flex;
   border-radius: 5px;
   box-shadow: 3px 3px 30px #222;
+  background: var(--gray-light);
   /* animation: start 3s; */
 }
 
-.contact-form h2 {
+.contact-form {
   cursor: default;
   font-size: 1.4em;
   background: white;
@@ -46,7 +70,7 @@ textarea {
   width: 100%;
   font-size: 0.7em;
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--gray-dark);
   outline: none;
   text-decoration: none;
   resize: none;
@@ -71,7 +95,7 @@ input:hover::placeholder {
   font-weight: 600;
   width: auto;
   background-position: right;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--gray-light);
   cursor: pointer;
   transition: 150ms ease-in-out;
   /*  animation: opacity 7s; */

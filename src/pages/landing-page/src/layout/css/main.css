@@ -8,27 +8,23 @@
 html {
   font-size: 10px;
   font-family: 'Montserrat', sans-serif;
-  background-color: #06091a;
+  background-color: var(--blueBackground);
   overflow-x: hidden;
-  /*track da scroll transparente*/
 }
 
 .filterBlur {
   width: 100vw;
   height: 200vh;
-
-  /*
-  background: greenyellow; */
   backdrop-filter: blur(50px);
   position: absolute;
-  top:0 ;
+  top: 0;
   background: var(--gray-light);
   z-index: -1;
 }
 @media only screen and (max-width: 600px) {
-    .filterBlur {
-      height: 200vh;
-    }
+  .filterBlur {
+    height: 200vh;
+  }
 }
 
 /*
