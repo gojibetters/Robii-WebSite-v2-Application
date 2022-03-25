@@ -5,10 +5,6 @@
 }
 
 @media (max-width: 800px) {
-  /*  .buttonBack {
-    display: none;
-    width: 170vw;
-  } */
   .container {
     display: flex;
     flex-direction: column;
@@ -23,16 +19,4 @@
   .svg {
     display: none;
   }
-}
-
-@media (max-width: 690px) {
-  /*  .color:nth-child(1) {
-    width: 50%;
-    height: 50%;
-  }
-
-  .color:nth-child(2) {
-    width: 50%;
-    height: 50%;
-  } */
 }

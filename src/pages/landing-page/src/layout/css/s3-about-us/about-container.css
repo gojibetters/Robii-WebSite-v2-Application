@@ -1,0 +1,44 @@
+#about-us {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+.title-about {
+  color: var(--gray-dark);
+  font-size: 2.5rem;
+  margin-top: 5%;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+  width: 60vw;
+  height: 30vh;
+  justify-content: space-around;
+}
+.avatar h1 {
+  color: var(--gray-dark);
+  margin-top: 5px;
+}
+.bloco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-container img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+.border-img {
+  background: linear-gradient(var(--purple) 5%, var(--blue-caparol) 70%);
+  width: 85px;
+  transform: rotate(20);
+  height: 85px;
+  border-radius: 50%;
+}
