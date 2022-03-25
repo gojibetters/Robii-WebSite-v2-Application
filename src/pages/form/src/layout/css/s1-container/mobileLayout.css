@@ -16,13 +16,23 @@
     align-self: center;
     width: 100vw;
   }
+
+  .contact-form h2 {
+    font-size: 0.9em;
+  }
   .svg {
     display: none;
   }
 }
 
 @media (max-width: 690px) {
-  .section {
-    width: 100vw;
+  /*  .color:nth-child(1) {
+    width: 50%;
+    height: 50%;
   }
+
+  .color:nth-child(2) {
+    width: 50%;
+    height: 50%;
+  } */
 }
