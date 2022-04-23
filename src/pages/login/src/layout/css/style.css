@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #1F232F;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+}
+
+.undraw-img {
+    background-color: #363A46;
+    padding: 30% 10% 30% 10%;
+}
+
+.undraw-img img {
+    width: 100%;
+}
+
+.login {
+    background-color: #30323F;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20%;
+}
+
+.login-title {
+    display: flex;
+    align-items: center;
+    padding: 7% 0% 4% 9%;
+}
+
+.login-text{
+    margin-left: 5%;
+}
+
+.login-title h1{
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.login-title p {
+    color: white;
+    font-size: 0.8em;
+    margin: 3% 0% 1% 0%;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.inputs input {
+    width: 80%;
+    padding: 2%;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+}
+
+.manter{
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+    font-size: 0.8em;
+    gap: 5px;
+    margin: 2% 0% 0% 10%;
+}
+.button-login{
+    display: flex;
+    align-items: center;
+}
+.button-login a{
+    outline: none;
+    color: white;
+    font-size: 0.8em;
+    margin-left: 5%;
+}
+
+.button-login button{
+    cursor: pointer;
+    min-width: 20%;
+    margin: 5% 0% 5% 10%;
+    padding: 1%;
+    background-color: #454753;
+    color: white;
+}
+
+.back-button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+/* //////////// -Mobile- //////////// */
+
+@media (max-width: 500px) {
+    .undraw-img {
+        display: none;
+    }
+    .form-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100%;
+    }
+    .button-send button{
+        width: 50%;
+        margin: 4% 0% 0% 0%;
+    }
+    .button-login{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .login {
+        background-color: #30323F;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20%;
+    }
+}
