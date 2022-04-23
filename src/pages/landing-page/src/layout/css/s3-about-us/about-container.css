@@ -19,9 +19,17 @@
   height: 30vh;
   justify-content: space-around;
 }
+.avatar {
+  width: 140px;
+  text-align: center;
+}
 .avatar h1 {
   color: var(--gray-dark);
   margin-top: 5px;
+}
+.avatar p {
+  margin-top: 5%;
+  color: var(--gray-dark);
 }
 .bloco {
   display: flex;
