@@ -19,11 +19,11 @@ contactForm.addEventListener('submit', (e) => {
   xhr.setRequestHeader('content-type', 'application/json');
   xhr.onload = () => {
     if (xhr.responseText === 'success') {
-      alert('Email enviado com sucesso.');
       name.value = '';
       email.value = '';
       subject.value = '';
       message.value = '';
+      window.location.replace('../thanks');
     } else {
       alert(
         `Oops! Email não enviado.\nStatus: ${xhr.status}; ${xhr.statusText}`
