@@ -8,7 +8,7 @@ export default {
       './src/pages/account-registration/src/layout/css',
       '.css'
     );
-    console.log(cssDirectoriesRender);
+
     const htmlDirectoriesRender = recursiveArchivesImport(
       './src/pages/account-registration/src/layout/html',
       '.ejs'

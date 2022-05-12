@@ -8,7 +8,7 @@ export default {
       './src/pages/thank-you/src/layout/css',
       '.css'
     );
-    console.log(cssDirectoriesRender);
+
     const htmlDirectoriesRender = recursiveArchivesImport(
       './src/pages/thank-you/src/layout/html',
       '.ejs'
