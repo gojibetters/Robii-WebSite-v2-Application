@@ -13,14 +13,14 @@
 .about-container {
   display: flex;
   align-items: center;
-
   flex-wrap: wrap;
-  width: 60vw;
+  width: 80vw;
   height: 30vh;
+  margin-top: 5%;
   justify-content: space-around;
 }
 .avatar {
-  width: 140px;
+  width: 190px;
   text-align: center;
 }
 .avatar h1 {

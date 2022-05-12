@@ -3,12 +3,12 @@
   text-align: center;
   display: block;
   width: 100vw;
-  height: auto;
-  font-size: 0.1rem;
   height: 100vh;
+  font-size: 0.1rem;
   z-index: 1;
   justify-content: center;
 }
+
 .ballThree {
   top: 130vh;
   position: absolute;
@@ -17,6 +17,5 @@
   width: 100%;
   background: linear-gradient(var(--purple) 5%, var(--blue-caparol) 70%);
   clip-path: circle(20vh at 10vh 30vh);
-  /* animation: animateBalls30 10s alternate infinite ease-in-out; */
   z-index: -2;
 }

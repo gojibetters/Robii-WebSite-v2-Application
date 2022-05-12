@@ -1,8 +1,8 @@
-.titleCards{
+.titleCards {
   width: 100vw;
-  padding-bottom: 80px;
+  margin-top: 5%;
 }
-.titleCards h1{
+.titleCards h1 {
   color: var(--gray-dark);
   font-size: 2.5rem;
   padding-left: 3%;

@@ -21,18 +21,9 @@ html {
   background: var(--gray-light);
   z-index: -1;
 }
+
 @media only screen and (max-width: 600px) {
   .filterBlur {
     height: 200vh;
   }
 }
-
-/*
-::-webkit-scrollbar {
-  width: 12px;
-}
-::-webkit-scrollbar-thumb {
-  background: #262cd9;
-  border-radius: 6px;
-}
- */
