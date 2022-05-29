@@ -14,11 +14,12 @@ contactForm.addEventListener('submit', (e) => {
     message: message.value,
   };
 
-  const xhr = new XMLHttpRequest();
-  xhr.open('POST', '/form');
-  xhr.setRequestHeader('content-type', 'application/json');
-  xhr.onload = () => {
-    if (xhr.responseText === 'success') {
+  fetch('/form', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(formData),
+  }).then((response) => {
+    if (response.ok) {
       name.value = '';
       email.value = '';
       subject.value = '';
@@ -29,7 +30,5 @@ contactForm.addEventListener('submit', (e) => {
         `Oops! Email não enviado.\nStatus: ${xhr.status}; ${xhr.statusText}`
       );
     }
-  };
-
-  xhr.send(JSON.stringify(formData));
+  });
 });
