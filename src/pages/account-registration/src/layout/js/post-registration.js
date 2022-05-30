@@ -9,22 +9,21 @@ const telefone = document.getElementById('fone');
 contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
-  const formData = {
-    name: name.value,
-    lastname: lastname.value,
-    email: email.value,
-    password: password.value,
-    passwordConfirm: passwordConfirm.value,
-    telefone: telefone.value,
-  };
-
-  if (formData.password !== formData.passwordConfirm) {
+  if (password.value !== passwordConfirm.value) {
     window.alert('As senhas devem ser a mesma!');
 
     password.value = '';
     passwordConfirm.value = '';
     return;
   }
+
+  const formData = {
+    name: name.value,
+    lastname: lastname.value,
+    email: email.value,
+    password: password.value,
+    telefone: telefone.value,
+  };
 
   fetch('/registration', {
     method: 'POST',
