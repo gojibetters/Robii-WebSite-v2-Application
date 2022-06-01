@@ -4,7 +4,7 @@ const lastname = document.getElementById('lastname');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const passwordConfirm = document.getElementById('passwordConfirm');
-const telefone = document.getElementById('fone');
+const telefone = document.getElementById('telephone');
 
 contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
