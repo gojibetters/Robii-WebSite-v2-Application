@@ -1,17 +1,19 @@
 const contactForm = document.querySelector('.inputs');
-const email = document.getElementById('email');
+const username = document.getElementById('username');
 const password = document.getElementById('password');
 
 contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
   const formData = {
-    email: email.value,
+    username: username.value,
     password: password.value,
   };
 
-  const url = `/loginUser/${formData.email}/${formData.password}`;
-
-  fetch(url).then(async (data) => {
+  fetch('/login', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(formData),
+  }).then(async (data) => {
     if (data.ok) {
       const user = await data.json();
       alert(JSON.stringify(user));

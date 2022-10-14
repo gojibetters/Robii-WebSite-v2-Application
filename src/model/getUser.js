@@ -3,8 +3,8 @@ import config from './configDB/configs.js';
 
 export async function getLoginUser(req, res) {
   const formData = {
-    email: req.params.email,
-    password: req.params.password,
+    username: req.body.username,
+    password: req.body.password,
   };
 
   sql.connect(config, async (err) => {
@@ -16,15 +16,14 @@ export async function getLoginUser(req, res) {
 
     if (!tableExists.recordset.length) {
       await request.query(
-        `CREATE TABLE USERS (NAME VARCHAR(30) NOT NULL, LASTNAME VARCHAR(100) NOT NULL, EMAIL VARCHAR(100) NOT NULL PRIMARY KEY, TELEFONE VARCHAR(14) NOT NULL, PASSWORD VARCHAR(100) NOT NULL)`
+        `CREATE TABLE USERS ( NOME_USUARIO VARCHAR(30) NOT NULL PRIMARY KEY, NIVEL_ACESSO VARCHAR(10) NOT NULL, SENHA VARCHAR(20) NOT NULL ) `
       );
     }
 
-    const query = `SELECT * from USERS WHERE EMAIL = '${formData.email}'`;
-
+    const query = `SELECT * from USERS WHERE NOME_USUARIO = '${formData.username}'`;
     try {
       const result = await request.query(query);
-      const passwordDatabase = result.recordset[0].PASSWORD;
+      const passwordDatabase = result.recordset[0].SENHA;
 
       if (formData.password === passwordDatabase) {
         res.status(200).json(result.recordset[0]).send();

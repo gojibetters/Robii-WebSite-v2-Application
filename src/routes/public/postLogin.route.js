@@ -1,8 +1,8 @@
 import { getLoginUser } from '../../model/getUser.js';
 
 export default {
-  method: 'get',
-  route: '/loginUser/:email/:password',
+  method: 'post',
+  route: '/login',
   run: async (req, res) => {
     getLoginUser(req, res);
   },

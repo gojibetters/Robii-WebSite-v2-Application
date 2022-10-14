@@ -3,6 +3,7 @@ const name = document.getElementById('name');
 const email = document.getElementById('email');
 const subject = document.getElementById('subject');
 const message = document.getElementById('message');
+const datebirth = document.getElementById('datebirth');
 
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -12,6 +13,7 @@ contactForm.addEventListener('submit', (e) => {
     email: email.value,
     subject: subject.value,
     message: message.value,
+    datebirth: datebirth.value,
   };
 
   fetch('/form', {
@@ -24,6 +26,7 @@ contactForm.addEventListener('submit', (e) => {
       email.value = '';
       subject.value = '';
       message.value = '';
+      datebirth.value = '';
       window.location.replace('../thanks');
     } else {
       alert(
