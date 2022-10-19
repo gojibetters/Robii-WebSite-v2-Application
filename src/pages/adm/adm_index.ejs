@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adm</title>
+
+  <% cssDirectoriesRender.forEach((urlArchive)=> {%>
+    <link rel="stylesheet" type="text/css" href="<%= urlArchive.replace('pages/adm/','') %>" />%> <% }) %>
+</head>
+
+<body>
+  <% htmlDirectoriesRender.forEach((urlArchive)=> {%>
+    <%- include( urlArchive.replace('pages/adm/', '' )) %>
+      <% }) %>
+        <% javascriptDirectoriesRender.forEach((urlArchive)=> {%>
+          <script src="<%= urlArchive.replace('pages/adm/','')  %>"></script>
+          <% }) %>
+</body>
+
+</html>

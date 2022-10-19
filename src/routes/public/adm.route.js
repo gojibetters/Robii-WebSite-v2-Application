@@ -2,23 +2,22 @@ import { recursiveArchivesImport } from '../../../utils/handlers-imports/handler
 
 export default {
   method: 'get',
-  route: '/registration',
+  route: '/adm',
   run: async (req, res) => {
     const cssDirectoriesRender = recursiveArchivesImport(
-      './src/pages/account-registration/src/layout/css',
+      './src/pages/adm/src/layout/css',
       '.css'
     );
-
     const htmlDirectoriesRender = recursiveArchivesImport(
-      './src/pages/account-registration/src/layout/html',
+      './src/pages/adm/src/layout/html',
       '.ejs'
     );
     const javascriptDirectoriesRender = recursiveArchivesImport(
-      './src/pages/account-registration/src/layout/js',
+      './src/pages/adm/src/layout/js',
       '.js'
     );
 
-    res.render('../../pages/account-registration/account-registration.ejs', {
+    res.render('../../pages/adm/adm_index', {
       cssDirectoriesRender,
       htmlDirectoriesRender,
       javascriptDirectoriesRender,
