@@ -19,7 +19,7 @@ export async function getForms(req, res) {
     try {
       const result = await request.query(query);
 
-      const forms = result.recordset;
+      const forms = result.recordset.filter((obj) => !obj.ARQUIVADO);
 
       res.status(200).json(forms).send();
     } catch (e) {

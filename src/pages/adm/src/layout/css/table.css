@@ -10,3 +10,14 @@ table td {
   background-color: #f0f0f0;
   color: #0c0c0c;
 }
+
+.buttonDelete {
+  width: 100%;
+  background-color: red;
+
+  height: 30px;
+}
+
+.buttonDelete:hover {
+  background-color: blue;
+}

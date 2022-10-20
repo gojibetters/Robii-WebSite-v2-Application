@@ -1,7 +1,6 @@
 const contactForm = document.querySelector('.contact-form');
 const name = document.getElementById('name');
 const email = document.getElementById('email');
-const subject = document.getElementById('subject');
 const message = document.getElementById('message');
 const datebirth = document.getElementById('datebirth');
 
@@ -11,20 +10,18 @@ contactForm.addEventListener('submit', (e) => {
   const formData = {
     name: name.value,
     email: email.value,
-    subject: subject.value,
     message: message.value,
     datebirth: datebirth.value,
   };
 
   fetch('/form', {
-    method: 'POST',
+    method: 'post',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(formData),
   }).then((response) => {
     if (response.ok) {
       name.value = '';
       email.value = '';
-      subject.value = '';
       message.value = '';
       datebirth.value = '';
       window.location.replace('../thanks');

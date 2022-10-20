@@ -17,12 +17,11 @@ export function postForm(req, res) {
     const formulario = {
       email: req.body.email,
       name: req.body.name,
-      subject: req.body.subject,
       message: req.body.message,
       datebirth: req.body.datebirth,
     };
 
-    const query = `INSERT INTO FORMULARIOS (NOME_USUARIO, DATA_NASCIMENTO, EMAIL,DUVIDA) VALUES ('${formulario.name}','${formulario.datebirth}','${formulario.email}','${formulario.message}')`;
+    const query = `INSERT INTO FORMULARIOS (NOME_USUARIO, DATA_NASCIMENTO, EMAIL, DUVIDA) VALUES ('${formulario.name}','${formulario.datebirth}','${formulario.email}','${formulario.message}')`;
     try {
       await request.query(query);
 
