@@ -16,7 +16,7 @@ contactForm.addEventListener('submit', async (e) => {
   }).then(async (data) => {
     if (data.ok) {
       const user = await data.json();
-      alert(JSON.stringify(user));
+      window.location.replace('../adm');
     } else if (data.status === 401) {
       alert(
         `Oops! Senha incorreta Tente novamente!\nStatus: ${data.status}; ${data.statusText}`

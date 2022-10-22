@@ -19,6 +19,11 @@
   }
 }
 
+.pDate {
+  margin-top: 10px;
+  font-size: 0.7em;
+}
+
 .container {
   display: flex;
   border-radius: 5px;
