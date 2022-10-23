@@ -18,8 +18,14 @@
   text-align: center;
   letter-spacing: 1px;
   border-radius: 14px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
   border: solid 2px var(--gray-light);
+  transition: 100ms ease-in-out;
+}
+
+.cards:hover{
+  transform:scale(105%);
+  box-shadow: 15px 15px 1px rgba(0, 0, 0, 0.1);
 }
 
 .cards img {
@@ -33,7 +39,7 @@
   transform: translate(0, -50%);
   text-transform: uppercase;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin: 5%;
 }
 
@@ -42,7 +48,7 @@
   width: 100%;
   padding-left: 2%;
   padding-right: 2%;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-bottom: 5%;
 }
 
@@ -58,7 +64,7 @@
 }
 @media only screen and (max-width: 600px) {
   .cards {
-    height: 15vh;
+    height: 50%;
     width: 90%;
     border: none;
     box-shadow: none;
