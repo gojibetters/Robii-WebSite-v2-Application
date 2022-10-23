@@ -4,7 +4,13 @@
 }
 .titleCards h1 {
   color: var(--gray-dark);
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   padding-left: 3%;
   padding-right: 3%;
+}
+
+@media only screen and (max-width: 600px) {
+  .titleCards {
+    margin-bottom: 6%;
+  }
 }

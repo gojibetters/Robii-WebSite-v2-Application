@@ -30,6 +30,7 @@
 .avatar p {
   margin-top: 5%;
   color: var(--gray-dark);
+  font-size: 15px;
 }
 .bloco {
   display: flex;
@@ -49,4 +50,10 @@
   transform: rotate(20);
   height: 85px;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .title-about {
+    margin-top: 20%;
+  }
 }

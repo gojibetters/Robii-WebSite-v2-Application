@@ -23,6 +23,7 @@
   height: 10px;
   border-radius: 1px;
   border: solid 2px var(--gray-light);
+  transition: 100ms ease-in-out;
 }
 
 .login a:hover {
