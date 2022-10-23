@@ -22,18 +22,18 @@ app.set('view engine', 'ejs');
 app.use(cors());
 app.use(router);
 
-app.listen("5000", () =>
+app.listen(PORTHTTPS, () =>
   console.log('\x1b[32m\x1b[1mAplicação Rodando em [http]\x1b[0m')
 );
 
-// https
-//   .createServer(
-//     {
-//       cert: fs.readFileSync('src/SSL/code.crt'),
-//       key: fs.readFileSync('src/SSL/code.key'),
-//     },
-//     app
-//   )
-//   .listen(PORTHTTPS, () => {
-//     console.log('\x1b[32m\x1b[1mAplicação Rodando em [https]\x1b[0m');
-//   });
+https
+  .createServer(
+    {
+      cert: fs.readFileSync('src/SSL/code.crt'),
+      key: fs.readFileSync('src/SSL/code.key'),
+    },
+    app
+  )
+  .listen(PORTHTTPS, () => {
+    console.log('\x1b[32m\x1b[1mAplicação Rodando em [https]\x1b[0m');
+  });
