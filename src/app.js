@@ -22,7 +22,7 @@ app.set('view engine', 'ejs');
 app.use(cors());
 app.use(router);
 
-app.listen(PORTHTTPS, () =>
+app.listen(PORTHTTP, () =>
   console.log('\x1b[32m\x1b[1mAplicação Rodando em [http]\x1b[0m')
 );
 

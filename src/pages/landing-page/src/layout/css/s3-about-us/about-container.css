@@ -21,16 +21,18 @@
 }
 .avatar {
   width: 190px;
+  height: 100%;
   text-align: center;
 }
 .avatar h1 {
   color: var(--gray-dark);
-  margin-top: 5px;
+  margin-top: 10px;
 }
 .avatar p {
   margin-top: 5%;
   color: var(--gray-dark);
   font-size: 15px;
+  line-height: 25px;
 }
 .bloco {
   display: flex;
@@ -55,5 +57,9 @@
 @media only screen and (max-width: 600px) {
   .title-about {
     margin-top: 20%;
+  }
+  .avatar {
+    height: auto;
+    margin-bottom: 10%;
   }
 }

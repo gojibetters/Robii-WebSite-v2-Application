@@ -63,6 +63,7 @@ body {
 }
 
 .inputs {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,6 +79,10 @@ body {
     border-radius: 5px;
     outline: none;
     color: white;
+}
+.inputs .submit {
+    width: 50%;
+    cursor: pointer;
 }
 
 .manter{
@@ -111,6 +116,11 @@ body {
 .back-button {
     background-color: transparent;
     cursor: pointer;
+    transition: 100ms ease-in-out;
+}
+.back-button :hover{
+    background-color: #1F232F;
+    border-radius: 100%;
 }
 
 
